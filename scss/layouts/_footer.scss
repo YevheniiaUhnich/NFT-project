@@ -1,0 +1,231 @@
+.footer__content {
+    width: 100%;
+    min-height: 334px;
+    margin-top: 80px;
+    background: $bg-card;
+
+    @include respond-to(sm) {
+        height: auto;
+    }
+
+
+
+    &-block-info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 30px;
+        width: 988px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 40px;
+
+        @include respond-to(sm) {
+            display: flex;
+            flex-direction: column;
+            padding-left: 40px;
+        }
+    }
+
+    &-block-logo {
+        width: 327px;  
+    }
+
+    &-icon {
+        fill: $color-button;
+    }
+
+    &-icon-logo {
+        fill: $color-body;
+    }
+
+    &-text {
+        color: rgba(204, 204, 204, 1);
+        font-family: $font-primary;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.4;
+        width: 238px;
+        height: 44px;
+        margin-top: 20px;
+    }
+
+    &-community {
+        color: rgba(204, 204, 204, 1);
+        font-family: $font-primary;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.4;
+        margin-top: 20px;
+    }
+
+    &-icon-cocial {
+        margin-top: 20px;
+    }
+
+    &-icon-discord {
+        fill: rgba(133, 133, 132, 1);
+            
+    }
+
+    &-icon-youtube {
+        fill: rgba(133, 133, 132, 1);
+    
+    }
+
+    &-icon-instagram {
+        fill: rgba(133, 133, 132, 1);
+    
+    }
+
+    &-text-explore {
+        font-family: $font-secondary;
+        color: $color-body;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 1.6;
+    }
+
+    &-text-marketplace {
+        font-family: $font-primary;
+        color: rgba(204, 204, 204, 1);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.4;
+        margin-top: 20px;
+    }
+
+    &-text-rankings {
+        font-family: $font-primary;
+        color: rgba(204, 204, 204, 1);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.4;
+        margin-top: 20px;
+    }
+
+    &-text-connect {
+        font-family: $font-primary;
+        color: rgba(204, 204, 204, 1);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.4;
+        margin-top: 20px;
+    }
+
+    &-block-join {
+        position: relative;
+    } 
+
+    &-title-join {
+        font-family: $font-secondary;
+        color: $color-body;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 1.6;
+    }
+
+    &-text-promotions {
+        font-family: $font-primary;
+        color: rgba(204, 204, 204, 1);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.4;
+        margin-top: 20px;
+
+        @include respond-to(xs) {
+            width: 315px;
+        }
+    }
+
+
+    &-btn-enter {
+        width: 425px;
+            height: 60px;
+            padding: 14px 24px;
+            background-color: white;
+            flex-grow: 1;
+            display: flex;
+            justify-content: flex-start;
+            color: rgba(43, 43, 43, 1);
+            cursor: text;
+            margin-top: 20px;
+            font-weight: 400;
+            font-size: 16px;
+            color: rgba(43, 43, 43, 1);
+            border: none;
+        
+            @include respond-to(xs) {
+                display: none;
+            }
+    }
+
+    &-btn-email {
+        display: none;
+
+        @include respond-to(sm) {
+            display: none;
+        }
+
+        @include respond-to(xs) {
+            display: block;
+            width: 315px;
+            height: 46px;
+            background: $color-body;
+            border: none;
+            color: rgba(43, 43, 43, 1);
+            margin-top: 40px;
+        }
+    }
+
+    &-btn-subscribe {
+        padding: 14px 20px;
+        background-color: $color-button;
+        position: absolute;
+        height: 61px;
+        width: 211px;
+        top: 120px;
+        left: 219px; 
+
+        @include respond-to(sm) {
+            top: 97px;
+        }
+
+        @include respond-to(xs) {
+            width: 315px;
+            height: 46px;
+            top: 200px;
+            left: 0;
+        }
+    }
+
+    &-custom-line {
+            width: 1049px;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border: none;
+            margin-top: 40px;
+            margin-bottom: 20px;
+
+        @include respond-to(xs) {
+            margin-top: 90px;
+            width: 315px;
+        }
+    }
+
+    &-market {
+        font-family: $font-primary;
+        line-height: 1.1;
+        font-weight: 400;
+        font-size: 12px;
+        color: rgba(133, 133, 132, 1);
+        margin-left: 200px;
+        padding-bottom: 40px;
+
+    @include respond-to(xs) {
+        width: 315px;
+        margin-left: 40px;
+    }
+    }
+    
+}

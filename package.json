@@ -1,0 +1,23 @@
+{
+  "name": "nft-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YevheniiaUhnich/NFT-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YevheniiaUhnich/NFT-project/issues"
+  },
+  "homepage": "https://github.com/YevheniiaUhnich/NFT-project#readme",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}

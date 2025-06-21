@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Savate:ital,wght@0,200..900;1,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Savate:ital,wght@0,200..900;1,200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+      <link rel="stylesheet" href="./css/style.css" />
+
+  </head>
+  <body>
+    <header>
+      <nav class="header__nav container">
+        <div class="header__nav-block-logo">
+          <svg class="header__nav-icon-storefront" width="32" height="32">
+            <use href="./icon/icons.svg#icon-Storefront"></use>
+          </svg>
+          <svg class="header__nav-icon-logo" width="200" height="20">
+            <use href="./icon/icons.svg#icon-NFT-Marketplace"></use>
+          </svg>
+        </div>
+        <div class="header__nav-navigation">
+          <ul class="header__nav-menu-list">
+            <li class="header__nav-menu-item">Marketplace</li>
+            <li class="header__nav-menu-item">Rankings</li>
+            <li class="header__nav-menu-item">Connect a wallet</li>
+          </ul>
+          <button class="button header__nav-signup-btn">
+            <svg class="header__nav-signup-icon" width="20" height="20">
+              <use href="./icon/icons.svg#icon-User"></use>
+            </svg>
+            Sign Up
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile menu -->
+
+      <div class="mobile__menu">
+        <div class="mobile__menu-logo">
+          <svg class="mobile__menu-icon-storefront" width="24" height="24">
+            <use href="./icon/icons.svg#icon-Storefront"></use>
+          </svg>
+          <svg class="mobile__menu-icon-logo" width="149" height="15">
+            <use href="./icon/icons.svg#icon-NFT-Marketplace"></use>
+          </svg>
+        </div>
+        <div class="mobile__menu-burger">
+          <svg class="mobile__menu-burger-icon" width="24" height="24">
+            <use href="./icon/icons.svg#icon-Burger-Menu"></use>
+          </svg>
+        </div>
+      </div>
+    </header>
+    <main>
+
+      <!-- Hero section -->
+
+      <section className="hero container">
+            <div class="hero__content">
+            <div class="hero__content-wrapper"> 
+            <div class="hero__content-tablet-wrapper"> 
+            <div class="hero__content-text-block"> 
+            <h1 class="hero__content-title">Discover Digital Art & Collect NFTs</h1>
+            <p class="hero__content-description">
+              NFT marketplace UI created with Anima for Figma. Collect, buy and
+              sell art from more than 20k NFT artists.
+            </p>
+            </div>
+          <div class="hero__content-image-block">
+            
+            <img
+              srcset="
+                ./image/1x/ImageHeroDesktop@1x.jpg  510w,
+                ./image/2x/ImageHeroDesktop@2x.jpg 1020w,
+                ./image/1x/ImageHeroTablet@1x.jpg   330w,
+                ./image/2x/ImageHeroTablet@2x.jpg   660w,
+                ./image/1x/ImageHeroMobile@1x.jpg   315w,
+                ./image/2x/ImageHeroMobile@2x.jpg   630w
+              "
+              size="(min-width: 1200px) 510px, (min-width: 768px) 330px, (min-width: 375px) 315px, (min-width: 320px) 315px, (max-width: 374px) 280px"
+              src="./image/1x/ImageHeroMobile@1X.jpg"
+              alt="Keemun-magic"
+              class="hero__content-image" />
+            <div class="hero__content-frame">
+            <h3 class="hero__content-frame-title">Space Walking</h3>
+            <div class="hero__content-frame-author">
+              <div class="hero__content-frame-avatar" role="img" aria-label="Avatar of Animakid">
+              <img src="./image/1x/Avatar 19.png" alt="animakid" />  
+            </div>  
+            <h5 class="hero__content-frame-author-name">Animakid</h5>
+            </div>
+            </div>
+            </div>
+            </div>
+            <button class="button hero__content-btn-start">
+              <svg class="hero__button-icon" width="20" height="20">
+                <use href="./icon/icons.svg#icon-RocketLaunch"></use>
+              </svg>
+              Get Started
+            </button>
+            </div>
+            </div>
+
+           <div class="hero__content-stats">
+  <div class="hero__content-stat">
+    <div class="hero__content-stat-number">240k+</div>
+    <div class="hero__content-stat-label">Total Sale</div>
+  </div>
+  <div class="hero__content-stat">
+    <div class="hero__content-stat-number">100k+</div>
+    <div class="hero__content-stat-label">Auctions</div>
+  </div>
+  <div class="hero__content-stat">
+    <div class="hero__content-stat-number">240k+</div>
+    <div class="hero__content-stat-label">Artists</div>
+  </div>
+</div>
+      </section>
+
+    <!-- Trending Collection -->
+
+    <article class="trending__content container">
+   <h2 class="trending__content-title">Trending Collection</h2>   
+  <p class="trending__content-subtitle">Checkout our weekly updated trending collection.</p>
+  
+
+  <div class="trending__content-list">
+    <!-- Перша карточка -->
+
+    <div class="trending__content-card">
+      <img 
+        srcset="
+          ./image/1x/PrimaryDesktop@1x.jpg  330w,
+          ./image/2x/PrimaryDesktop@2x.jpg 660w,
+          ./image/1x/PrimaryTablet@1x.jpg   315w,
+          ./image/2x/PrimaryTablet@2x.jpg  630w,
+          ./image/1x/PrimaryMobile@1x.jpg  315w,
+          ./image/2x/PrimaryMobile@2x.jpg   630w
+        "
+        sizes="(min-width: 1200px) 330px, (min-width: 768px) 315px, (max-width: 767px) 100vw"
+        src="./image/1x/PrimaryMobile@1x.jpg"
+        alt="Keemun-dog"
+        class="trending__content-image-main"
+      />
+
+      <div class="trending__content-image-group">
+        <img class="trending__content-image-small" src="./image/1x/Secondary.jpg" alt="Keemun-cat" />
+        <img class="trending__content-image-small" src="./image/1x/SecondaryBear@1x.jpg" alt="Keemun-bear" />
+        <div class="trending__content-image-count-desktop">1025+</div>
+  
+      </div>
+
+      <h3 class="trending__content-collection-name">DSGN Animals</h3>
+
+      <div class="trending__content-author">
+        <div class="trending__content-author-avatar" role="img" aria-label="Avatar of Animakid">
+          <img src="./image/1x/Avatar 17.png" alt="MrFox" />
+        </div>
+        <p class="trending__content-author-name">MrFox</p>
+      </div>
+    </div>
+
+<!-- друга карточка -->
+
+        <div class="trending__content-card trending__content-card-hidden">
+      <img 
+        srcset="
+          ./image/1x/graveDesktop@1x.jpg  330w,
+          ./image/2x/graveDesktop@2x.jpg 660w,
+          ./image/1x/graveTablet@1x.jpg   315w,
+          ./image/2x/graveTablet@2x.jpg  630w,
+        "
+        sizes="(min-width: 1200px) 330px, (min-width: 768px) 315px, (max-width: 767px) 100vw"
+        src="./image/1x/graveTablet@1x.jpg"
+        alt="Grave"
+        class="trending__content-image-main"
+      />
+
+      <div class="trending__content-image-group">
+        <img class="trending__content-image-small" src="./image/1x/graveTablet.jpg" alt="Grave" />
+        <img class="trending__content-image-small" src="./image/1x/graveTablet1.jpg" alt="Grave" />
+        <div class="trending__content-image-count">1025+</div>
+        <div class="trending__content-image-count-tablet">6+</div>
+        
+
+      </div>
+
+      <h3 class="trending__content-collection-name">Magic Mushrooms</h3>
+
+      <div class="trending__content-author">
+        <div class="trending__content-author-avatar" role="img" aria-label="Avatar of Animakid">
+          <img src="./image/1x/Avatar 16.png" alt="Shroomie" />
+        </div>
+        <p class="trending__content-author-name">Shroomie</p>
+      </div>
+    </div>
+
+    <!-- треття карточка -->
+
+    <div class="trending__content-card trending__content-card-hidden-tablet trending__content-card-hidden-mobile">
+      <img 
+        srcset="
+          ./image/1x/PrimaryPhotoPlaceholder5@1x.jpg  330w,
+          ./image/2x/PrimaryPhotoPlaceholder5@2x.jpg 660w,
+        "
+        sizes="(min-width: 1200px) 330px"
+        src="./image/1x/PrimaryPhotoPlaceholder5@1x.jpg"
+        alt="Skater"
+        class="trending__content-image-main"
+      />
+
+      <div class="trending__content-image-group">
+        <img class="trending__content-image-small" src="./image/1x/Secondary Photo Placeholder6.jpg" alt="Skater" />
+        <img class="trending__content-image-small" src="./image/1x/Secondary Photo Placeholder7.jpg" alt="Skater" />
+        <div class="trending__content-image-count-desktop">1025+</div>
+      </div>
+
+      <h3 class="trending__content-collection-name">Disco Machines</h3>
+
+      <div class="trending__content-author">
+        <div class="trending__content-author-avatar" role="img" aria-label="Avatar of Animakid">
+          <img src="./image/1x/Avatar 18.png" alt="BeKind2Robots" />
+        </div>
+        <p class="trending__content-author-name">BeKind2Robots</p>
+      </div>
+    </div>
+  </div>
+</article>
+
+    <!-- Top creators -->
+
+    <section class="creators__content">
+      <h2 class="creators__content-title">Top creators</h2>
+      <p class="creators__content-subtitle">Checkout Top Rated Creators on the NFT Marketplace</p>
+      <div class="creators__content-block-list">
+        <ul class="creators__content-list">
+
+           <!-- Картки творців -->
+
+          <li class="creators__content-item">
+            <img class="creators__content-avatar" src="./image/1x/Avatar 1.jpg" alt="Keepitreal"/>
+            <div class="creators__content-info">
+              <h3 class="creators__content-name">Keepitreal</h3>
+              <p class="creators__content-sales">Total Sales: <span class="creators__content-amount"> 34.53 ETH</span></p>
+            </div>
+            <div class="creators__content-round">1</div>
+          </li>
+
+          <li class="creators__content-item">
+            <img class="creators__content-avatar" src="./image/1x/Avatar 2.jpg" alt="DigiLab"/>
+            <div class="creators__content-info">
+              <h3 class="creators__content-name">DigiLab</h3>
+              <p class="creators__content-sales">Total Sales: <span class="creators__content-amount"> 32.13 ETH</span></p>
+            </div>
+            <div class="creators__content-round">2</div>
+          </li>
+
+          <li class="creators__content-item">
+            <img class="creators__content-avatar" src="./image/1x/Avatar 3.jpg" alt="GravityOne"/>
+            <div class="creators__content-info">
+              <h3 class="creators__content-name">GravityOne</h3>
+              <p class="creators__content-sales">Total Sales: <span class="creators__content-amount"> 28.93 ETH</span></p>
+            </div>
+            <div class="creators__content-round">3</div>
+          </li>
+
+          <li class="creators__content-item">
+            <img class="creators__content-avatar" src="./image/1x/Avatar 4.jpg" alt="Juanie"/>
+            <div class="creators__content-info">
+              <h3 class="creators__content-name">Juanie</h3>
+              <p class="creators__content-sales">Total Sales: <span class="creators__content-amount"> 25.30 ETH</span></p>
+            </div>
+            <div class="creators__content-round">4</div>
+          </li>
+
+          <li class="creators__content-item">
+            <img class="creators__content-avatar" src="./image/1x/Avatar 5.jpg" alt="BlueWhale"/>
+            <div class="creators__content-info">
+              <h3 class="creators__content-name">BlueWhale</h3>
+              <p class="creators__content-sales">Total Sales: <span class="creators__amount"> 22.22 ETH</span></p>
+            </div>
+            <div class="creators__content-round">5</div>
+          </li>
+
+<!-- карткu для Tablet -->
+
+          <li class="creators__content-item creators__content-item--tablet">
+            <img class="creators__content-avatar" src="./image/1x/Avatar 6.jpg" alt="GravityOne"/>
+            <div class="creators__content-info">
+              <h3 class="creators__content-name">Mr Fox</h3>
+              <p class="creators__content-sales">Total Sales: <span class="creators__content-amount"> 34.53 ETH</span></p>
+            </div>
+            <div class="creators__content-round">6</div>
+          </li>
+
+     <!-- карткu для desktop -->
+
+               <li class="creators__content-item creators__content-item--desktop">
+            <img class="creators__content-avatar" src="./image/1x/Avatar 7.jpg" alt="robotica" />
+            <div class="creators__content-info">
+              <h3 class="creators__content-name">Shroomie</h3>
+              <p class="creators__content-sales">Total Sales: <span class="creators__content-amount"> 34.53 ETH</span></p>
+            </div>
+            <div class="creators__content-round">7</div>
+          </li>
+
+          <li class="creators__content-item creators__content-item--desktop">
+            <img class="creators__content-avatar" src="./image/1x/Avatar 8.jpg" alt="Robotica"/>
+            <div class="creators__content-info">
+              <h3 class="creators__content-name">Robotica</h3>
+              <p class="creators__content-sales">Total Sales: <span class="creators__content-amount"> 34.53 ETH</span></p>
+            </div>
+            <div class="creators__content-round">8</div>
+          </li>
+
+          <li class="creators__content-item creators__content-item--desktop">
+            <img class="creators__content-avatar" src="./image/1x/Avatar 9.jpg" alt="RustyRobot"/>
+            <div class="creators__content-info">
+              <h3 class="creators__content-name">RustyRobot</h3>
+              <p class="creators__content-sales">Total Sales: <span class="creators__content-amount"> 34.53 ETH</span></p>
+            </div>
+            <div class="creators__content-round">9</div>
+          </li>
+
+          <li class="creators__content-item creators__content-item--desktop">
+            <img class="creators__content-avatar" src="./image/1x/Avatar 10.jpg" alt="Animakid"/>
+            <div class="creators__content-info">
+              <h3 class="creators__content-name">Animakid</h3>
+              <p class="creators__content-sales">Total Sales: <span class="creators__content-amount"> 34.53 ETH</span></p>
+            </div>
+            <div class="creators__content-round">10</div>
+          </li>
+
+          <li class="creators__content-item creators__content-item--desktop">
+            <img class="creators__content-avatar" src="./image/1x/Avatar 11.jpg" alt="Dotgu"/>
+            <div class="creators__content-info">
+              <h3 class="creators__content-name">Dotgu</h3>
+              <p class="creators__content-sales">Total Sales: <span class="creators__content-amount"> 34.53 ETH</span></p>
+            </div>
+            <div class="creators__content-round">11</div>
+          </li>
+
+          <li class="creators__content-item creators__content-item--desktop">
+            <img class="creators__content-avatar" src="./image/1x/Avatar 12.jpg" alt="Ghiblier"/>
+            <div class="creators__content-info">
+              <h3 class="creators__content-name">Ghiblier</h3>
+              <p class="creators__content-sales">Total Sales: <span class="creators__acontent-mount"> 34.53 ETH</span></p>
+            </div>
+            <div class="creators__content-round">12</div>
+          </li>
+        </ul>
+
+        <button class="button creators__content-btn-rankings">
+          <svg class="creators__content-icon" width="20" height="20">
+            <use href="./icon/icons.svg#icon-RocketLaunch"></use>
+          </svg>
+          View Rankings
+        </button>
+      </div>
+    </section>
+
+    <!-- Browse Categories -->
+
+    <article class="category__content">
+      <h2 class="category__content-title">Browse Categories</h2>
+      <ul class="category__content-list">
+
+        <li class="category__content-item">
+          <div class="category__content-bg-icon">
+            <img class="category__content-image" src="./image/1x/Image 1.jpg" alt="Dall"/>
+            <div class="category__content-blur-layer">
+          <svg class="category__content-icon" width="80" height="80">
+            <use href="./icon/icons.svg#icon-PaintBrush"></use>
+          </svg>
+          </div>
+          </div>
+          <div class="category__content-art">
+            <h4 class="category__content-subtitle">Art</h4>
+          </div>
+        </li>
+
+        <li class="category__content-item">
+          <div class="category__content-bg-icon">
+            <img class="category__content-image" src="./image/1x/Image 2.jpg" alt="Portrait"/>
+            <div class="category__content-blur-layer">
+          <svg class="category__content-icon" width="80" height="80">
+            <use href="./icon/icons.svg#icon-Swatches"></use>
+          </svg>
+          </div>
+          </div>
+          <div class="category__content-art">
+            <h4 class="category__content-subtitle">Collectibles</h4>
+          </div>
+        </li>
+
+        <li class="category__content-item">
+          <div class="category__content-bg-icon">
+            <img class="category__content-image" src="./image/1x/Image 3.jpg" alt="Music"/>
+            <div class="category__content-blur-layer">
+          <svg class="category__content-icon" width="80" height="80">
+            <use href="./icon/icons.svg#icon-MusicNotes"></use>
+          </svg>
+          </div>
+          </div>
+          <div class="category__content-art">
+            <h4 class="category__content-subtitle">Music</h4>
+          </div>
+        </li>
+
+        <li class="category__content-item">
+          <div class="category__content-bg-icon">
+            <img class="category__content-image" src="./image/1x/Image 4.jpg" alt="Camera"/>
+            <div class="category__content-blur-layer">
+          <svg class="category__content-icon" width="80" height="80">
+            <use href="./icon/icons.svg#icon-Camera"></use>
+          </svg>
+          </div>
+          </div>
+          <div class="category__content-art">
+            <h4 class="category__content-subtitle">Photography</h4>
+          </div>
+        </li>
+
+        <li class="category__content-item">
+          <div class="category__content-bg-icon">
+            <img class="category__content-image" src="./image/1x/Image 5.jpg" alt="Camera"/>
+            <div class="category__content-blur-layer">
+          <svg class="category__content-icon" width="80" height="80">
+            <use href="./icon/icons.svg#icon-VideoCamera"></use>
+          </svg>
+          </div>
+          </div>
+          <div class="category__content-art">
+            <h4 class="category__content-subtitle">Video</h4>
+          </div>
+        </li>
+
+        <li class="category__content-item">
+          <div class="category__content-bg-icon">
+            <img class="category__content-image" src="./image/1x/Image 6.jpg" alt="Camera"/>
+            <div class="category__content-blur-layer">
+          <svg class="category__content-icon" width="80" height="80">
+            <use href="./icon/icons.svg#icon-MagicWand"></use>
+          </svg>
+          </div>
+          </div>
+          <div class="category__content-art">
+            <h4 class="category__content-subtitle">Utility</h4>
+          </div>
+        </li>
+
+        <li class="category__content-item">
+          <div class="category__content-bg-icon">
+            <img class="category__content-image" src="./image/1x/Image 7.jpg" alt="Camera"/>
+            <div class="category__content-blur-layer">
+          <svg class="category__content-icon" width="80" height="80">
+            <use href="./icon/icons.svg#icon-Basketball"></use>
+          </svg>
+          </div>
+          </div>
+          <div class="category__content-art">
+            <h4 class="category__content-subtitle">Sport</h4>
+          </div>
+        </li>
+
+        <li class="category__content-item">
+          <div class="category__content-bg-icon">
+            <img class="category__content-image" src="./image/1x/Image 8.jpg" alt="Camera"/>
+            <div class="category__content-blur-layer">
+          <svg class="category__content-icon" width="80" height="80">
+            <use href="./icon/icons.svg#icon-Planet"></use>
+          </svg>
+          </div>
+          </div>
+          <div class="category__content-art">
+            <h4 class="category__content-subtitle">Virtual Worlds</h4>
+          </div>
+        </li>
+
+      </ul>
+    </article>
+
+    <!-- Discover More NFTs -->
+
+
+   <section class="discover__content">
+  <h2 class="discover__content-title">Discover More NFTs</h2>
+  <h4 class="discover__content-subtitle">Explore new trending NFTs</h4>
+  <ul class="discover__content-list">
+
+    <li class="discover__content-item">
+      <div class="discover__content-card">
+        <img 
+          class="discover__content-card-image"
+          srcset="
+            ./image/1x/Image9Desktop@1x.jpg  420w,
+            ./image/2x/Image9Desktop@2x.jpg 840w,
+            ./image/1x/Image9Tablet@1x.jpg   330w,
+            ./image/2x/Image9Tablet@2x.jpg  660w,
+            ./image/1x/Image9Mobile@1x.jpg 315w,
+            ./image/2x/Image9Mobile@2x.jpg  630w
+          "
+          sizes="(min-width: 1200px) 420px, (min-width: 768px) 330px, 100vw"
+          src="./image/1x/Image9Mobile@1x.jpg"
+          alt="Keemun magic futuristic"
+        />
+
+        <div class="discover__content-block-info">
+          <h3 class="discover__content-title-card">Distant Galaxy</h3>
+          <div class="discover__content-block-info-avatar">
+            <div class="discover__content-block-avatar" role="img" aria-label="Avatar of MoonDancer">
+              <img class="discover__content-avatar" src="./image/1x/Avatar 13.png" alt="MoonDancer" />
+            </div>
+            <h3 class="discover__content-title-avatar">MoonDancer</h3>
+              </div>
+              <div class="discover__content-block-price">
+              <p class="discover__content-price">Price</p>
+              <p class="discover__content-price">Highest Bid</p>
+              </div>
+               <div class="discover__content-block-price">
+              <p class="discover__content-number">1.63 ETH</p>
+              <p class="discover__content-number">0.33 wETH</p>
+            </div>
+             </div>
+          </div>
+      </div>
+    </li>
+
+     <li class="discover__content-item">
+      <div class="discover__content-card">
+        <img 
+          class="discover__content-card-image"
+          srcset="
+            ./image/1x/Image10desktop@1x.jpg  420w,
+            ./image/2x/Image10desktop@2x.jpg 840w,
+            ./image/1x/Image10tablet@1x.jpg   330w,
+            ./image/2x/Image10tablet@2x.jpg  660w,
+            ./image/1x/Image10mobile@1x.jpg 315w,
+            ./image/2x/Image10mobile@2x.jpg  630w
+          "
+          sizes="(min-width: 1200px) 420px, (min-width: 768px) 330px, 100vw"
+          src="./image/1x/Image10mobile@1x.jpg"
+          alt="Keemun magic floating"
+        />
+
+        <div class="discover__content-block-info">
+          <h3 class="discover__content-title-card">Life on Edena</h3>
+          <div class="discover__content-block-info-avatar">
+            <div class="discover__content-block-avatar" role="img" aria-label="Avatar of MoonDancer">
+              <img class="discover__content-avatar" src="./image/1x/Avatar 14.png" alt="NebulaKid" />
+            </div>
+            <h3 class="discover__content-title-avatar">NebulaKid</h3>
+              </div>
+              <div class="discover__content-block-price">
+              <p class="discover__content-price">Price</p>
+              <p class="discover__content-price">Highest Bid</p>
+              </div>
+               <div class="discover__content-block-price">
+              <p class="discover__content-number">1.63 ETH</p>
+              <p class="discover__content-number">0.33 wETH</p>
+            </div>
+             </div>
+          </div>
+      </div>
+    </li>
+
+    <li class="discover__content-item discover__content-item-tablet">
+      <div class="discover__content-card">
+        <img 
+          class="discover__content-card-image"
+          srcset="
+            ./image/1x/Image11desktop@1x.jpg  420w,
+            ./image/2x/Image11desktop@2x.jpg 840w,
+            ./image/1x/Image11mobile@1x.jpg 315w,
+            ./image/2x/Image11mobile@2x.jpg  630w
+          "
+          sizes="(min-width: 1200px) 420px, (min-width: 768px) 330px, 100vw"
+          src="./image/1x/Image11mobile@1x.jpg"
+          alt="AstroFiction"
+        />
+
+        <div class="discover__content-block-info">
+          <h3 class="discover__content-title-card">AstroFiction</h3>
+          <div class="discover__content-block-info-avatar">
+            <div class="discover__content-block-avatar" role="img" aria-label="Avatar of MoonDancer">
+              <img class="discover__content-avatar" src="./image/1x/Avatar 15.png" alt="Spaceone" />
+            </div>
+            <h3 class="discover__content-title-avatar">Spaceone</h3>
+              </div>
+              <div class="discover__content-block-price">
+              <p class="discover__content-price">Price</p>
+              <p class="discover__content-price">Highest Bid</p>
+              </div>
+               <div class="discover__content-block-price">
+              <p class="discover__content-number">1.63 ETH</p>
+              <p class="discover__content-number">0.33 wETH</p>
+            </div>
+             </div>
+          </div>
+      </div>
+    </li>
+  </ul>
+
+  <button class="button discover__content-btn-see-all">
+    <svg class="iconButton" width="20" height="20">
+      <use href="./icon/icons.svg#icon-Eye"></use>
+    </svg>
+    See All</button>
+</section>
+
+
+<!-- Magic Mashrooms -->
+
+
+<article class="highlight__content">
+  <div class="highlight__content-block-magic">
+    <div class="highlight__content-avatar" role="img" aria-label="Avatar of MoonDancer">
+              <img src="./image/1x/Avatar 16.png" alt="Shroomie" />
+            </div>
+    <p class="highlight__content-subtitle">Shroomie</p>
+    </div>
+    <h2 class="highlight__content-title">Magic Mashrooms</h2>
+
+    <div class="highlight__content-timer">
+      <p class="highlight__content-title-auction">Auction ends in:</p>
+      <div class="highlight__content-block-text">
+        <div class="highlight__content-timer-block">
+          <p class="highlight__content-time">59:</p>
+          <p class="highlight__content-label">Hours</p>
+        </div>
+        <div class="highlight__content-timer-block">
+          <p class="highlight__content-time">59:</p>
+          <p class="highlight__content-label">Minutes</p>
+        </div>
+        <div class="highlight__content-timer-block">
+          <p class="highlight__content-time">59</p>
+          <p class="highlight__content-label">Seconds</p>
+        </div>
+      </div>
+      </div>
+
+      <button class="button highlight__content-btn-NFT">
+        <svg class="highlight__content-icon-btn" width="20" height="20">
+      <use href="./icon/icons.svg#icon-Eye"></use>
+    </svg>
+        See NFT
+      </button>    
+  </div>
+</article>
+
+<!-- How it works -->
+
+<section class="works__content">
+  <h3 class="works__content-title">How it works</h3>
+  <p class="works__content-subtitle">Find out how to get started</p>
+
+  <ul class="works__content-block-works">
+
+    <li class="works__content-card">
+      <img class="works__content-image" src="./image/1x/pay.png" alt="pay"/>
+      <div class="works__content-block-text">
+      <h4 class="works__content-text">Setup Your wallet</h4>
+      <p class="works__content-description">Set up your wallet of choice. Connect it to the NFT market by clicking the wallet icon in the top right corner.</p>
+      </div>
+    </li>
+
+    <li class="works__content-card">
+      <img class="works__content-image" src="./image/1x/media.png" alt="media"/>
+      <div class="works__content-block-text">
+      <h4 class="works__content-text">Create Collectiont</h4>
+      <p class="works__content-description"">Upload your work and setup your collection. Add a description, social links and floor price.</p>
+      </div>
+    </li>
+
+    <li class="works__content-card">
+      <img class="works__content-image" src="./image/1x/buy.png" alt="buy"/>
+      <div class="works__content-block-text">
+      <h4 class="works__content-text">Start Earning</h4>
+      <p class="works__content-description">Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.</p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<!-- Join our weekly -->
+
+<article class="subscribe__content">
+  <div class="subscribe__content-block-image">
+  <img 
+  class="subscribe__content-image"
+          srcset="
+            ./image/1x/astronautDesktop@1x.jpg  425w,
+            ./image/1x/astronautDesktop@1x.jpg 850w,
+            ./image/1x/astronautTablet@1x.jpg 300w,
+            ./image/2x/astronautTablet@2x.jpg 600w,
+            ./image/1x/astronautMobile@1x.jpg 315w,
+            ./image/2x/astronautMobile@2x.jpg  630w
+          "
+          sizes="(min-width: 1200px) 425px, (min-width: 768px) 330px, 100vw"
+          src="./image/2x/astronautMobile@2x.jpg"
+          alt="Astronaut"
+        />
+  <div class="subscribe__content-block-about">
+  <h2 class="subscribe__content-title">Join our weekly<br> digest</h2>
+  <p class="subscribe__content-subtitle">Get exclusive promotions & updates<br> straight to your inbox.</p>
+  
+  <div class="subscribe__content-block-button">
+    <button class="button subscribe__content-btn-address">Enter your email here</button>
+
+    <button class="button subscribe__content-btn-address-tablet">Enter Your Email Address</button>
+    <button class="button subscribe__content-btn-subscribe">
+      <svg class="subscribe__content-icon" width="20" height="20">
+        <use href="./icon/icons.svg#icon-EnvelopeSimple"></use>
+      </svg>
+      Subscribe
+    </button>
+    </div>
+</div>
+  </div>
+</article>
+
+</main>
+
+
+<footer>
+  <div class="footer__content">
+   
+<div class="footer__content-block-info">
+  <div class="footer__content-block-logo"> 
+  <svg class="footer__content-icon" width="32" height="32">
+            <use href="./icon/icons.svg#icon-Storefront"></use>
+          </svg>
+          <svg class="footer__content-icon-logo" width="200" height="20">
+            <use href="./icon/icons.svg#icon-NFT-Marketplace"></use>
+          </svg>
+
+
+<p class="footer__content-text">NFT marketplace UI created with Anima for Figma.</p>
+<p class="footer__content-community">Join our community</p>
+
+<div class="footer__content-icon-cocial">
+  <svg class="footer__content-icon-discord" width="32" height="32">
+    <use href="./icon/icons.svg#icon-DiscordLogo"></use>
+  </svg>
+
+   <svg class="footer__content-icon-youtube" width="32" height="32">
+    <use href="./icon/icons.svg#icon-YoutubeLogo"></use>
+  </svg>
+
+   <svg class="footer__content-icon-twitter" width="32" height="32">
+    <use href="icon/TwitterLogo.svg"></use>
+  </svg>
+
+   <svg class="footer__content-icon-instagram" width="32" height="32">
+    <use href="./icon/icons.svg#icon-InstagramLogo"></use>
+  </svg>
+</div>
+
+</div>
+
+
+
+<div class="footer__content-block-explore">
+<p class="footer__content-text-explore">Explore</p>
+<p class="footer__content-text-marketplace">Marketplace</p>
+<p class="footer__content-text-rankings">Rankings</p>
+<p class="footer__content-text-connect">Connect a wallet</p>
+</div>
+
+<div class="footer__content-block-join">
+<h3 class="footer__content-title-join">Join our weekly digest</h3>
+<p class="footer__content-text-promotions">Get exclusive promotions & updates straight to your inbox.</p>
+
+<button class="button footer__content-btn-enter">Enter your email here</button>
+<button class="button footer__content-btn-email">Enter Your Email Address</button>
+<button class="button footer__content-btn-subscribe">
+    
+    Subscribe
+  </button>  
+</div>
+</div>
+
+
+  <hr class="footer__content-custom-line" />
+  <p class="footer__content-market">Ⓒ NFT Market. Use this template freely.</p>
+
+</footer>
+  </body>
+</html>

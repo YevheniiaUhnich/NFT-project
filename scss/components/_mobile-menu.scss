@@ -1,0 +1,39 @@
+.mobile__menu {
+    display: none;
+
+    @include respond-to(sm) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        padding: 40px;
+    }
+
+    @include respond-to(xs) {
+        display: flex;
+        align-items: center;
+        height: 54px;
+        gap: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    &-logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &-icon-storefront {
+        fill: rgba(162, 89, 255, 1);
+    }
+
+    &-icon-logo {
+        fill: $color-body;
+    }
+
+    &-burger {
+        fill: $color-body;
+        width: 24px;
+    }
+}

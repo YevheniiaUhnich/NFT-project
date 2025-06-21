@@ -1,0 +1,190 @@
+.trending__content {
+    width: 100%;
+    margin-top: 160px;
+
+    @include respond-to(xs) {
+        margin-top: 80px;
+    }
+
+    &-title {
+        font-family: $font-primary;
+        color: $color-body;
+        font-size: 38px;
+        font-weight: 600px;
+        line-height: 1.2;
+        margin-left: 190px;
+
+        @include respond-to(sm) {
+            font-size: 28px;
+            line-height: 1.4;
+            margin-left: 40px;
+        }
+    }
+
+    &-subtitle {
+        font-family: $font-primary;
+        color: $color-body;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 1.6;
+        margin-left: 190px;
+
+        @include respond-to(sm) {
+            font-size: 16px;
+            line-height: 1.4;
+            margin-left: 40px;
+        }
+
+        @include respond-to(xs) {
+        width: 315px;
+        margin-top: 10px;
+                }
+    }
+
+    &-list {
+        width: 1050px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+
+        @include respond-to(sm) {
+            width: 690px;
+        }
+
+        @include respond-to(xs) {
+            width: 315px;
+        }
+    }
+
+    &-image-main {
+        border-radius: $border-radius;
+
+        @include respond-to(sm) {
+            width: 330px;
+            height: 330px;
+        }
+
+        @include respond-to(xs) {
+            width: 315px;
+            height: 315px;
+                }
+    }
+
+    &-image-group {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    &-image-small {
+        border-radius: $border-radius;
+
+        @include respond-to(xs) {
+            width: 95px;
+            height: 95px;
+        }
+    }
+
+    &-image-count-desktop {
+        width: 100px;
+        height: 100px;
+        background: $color-button;
+        border-radius: $border-radius;
+        color: $color-body;
+        font-family: $font-primary;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 1.6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include respond-to(xs) {
+            width: 95px;
+            height: 95px;
+        }
+    }
+
+    &-image-count-tablet {
+        display: none;
+            
+        @include respond-to(sm) {
+            width: 100px;
+            height: 100px;
+            background: $color-button;
+            border-radius: $border-radius;
+            color: $color-body;
+            font-family: $font-primary;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+    }
+
+    &-image-count {
+        width: 100px;
+            height: 100px;
+            background: $color-button;
+            border-radius: $border-radius;
+            color: $color-body;
+            font-family: $font-primary;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        @include respond-to(sm) {
+            display: none;
+        }
+    }
+
+
+    &-collection-name {
+        font-family: $font-primary;
+        font-weight: 600;
+        font-size: 22px;
+        color: $color-body;
+        line-height: 1.4;
+        margin-top: 20px;
+    }
+
+    &-author {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &-author-name {
+        font-family: $font-primary;
+        color: $color-body;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+
+    &-card-hidden-tablet {
+        @include respond-to(sm) {
+            display: none;
+        }
+    }
+
+    &-card-hidden {
+        @include respond-to(xs) {
+            display: none;
+        }
+    }
+}
