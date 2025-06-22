@@ -1,153 +1,157 @@
 .subscribe__content {
-    width: 100%;
-    margin-top: 80px;
+  width: 100%;
+  margin-top: 80px;
 
-    &-block-image {
-        width: 1050px;
-        min-height: 430px;
-        background: $bg-card;
-        border-radius: $border-radius;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 80px;
+  &-block-image {
+    max-width: 1050px;
+    min-height: 430px;
+    background: $bg-card;
+    border-radius: $border-radius;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 40px;
 
-        @include respond-to(sm) {
-            width: 690px;
-            min-height: 360px;
-            gap: 40px;
-        }
-
-        @include respond-to(xs) {
-            width: 315px;
-            min-height: 645px;
-            background: transparent;
-            flex-direction: column;
-        }
+    @include respond-to(sm) {
+      max-width: 690px;
+      min-height: 360px;
+      gap: 40px;
+      padding: 30px;
     }
-
-    &-image {
-        width: 425px;
-        height: 310px;
-        border-radius: $border-radius;
-
-        @include respond-to(sm) {
-            width: 300px;
-            height: 280px;
-        }
-
-        @include respond-to(xs) {
-            width: 315px;
-            height: 255px;
-        }
-    }
-
-    &-block-about {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-
-        @include respond-to(sm) {
-            height: 280px;
-        }
-    }
-
-    &-title {
-        font-family: $font-primary;
-        color: $color-body;
-        font-size: 38px;
-        font-weight: 600;
-        line-height: 1.2;
-        padding-bottom: 10px;
-
-        @include respond-to(sm) {
-            font-size: 28px;
-            line-height: 1.4;
-        }
-    } 
-
-    &-subtitle {
-        font-family: $font-primary;
-        color: $color-body;
-        font-size: 22px;
-        font-weight: 400;
-        line-height: 1.6;
-        margin-top: 20px;
-        margin-bottom: 60px;
-
-        @include respond-to(sm) {
-            font-size: 16px;
-            line-height: 1.4;
-            margin-top: 0;
-            margin-bottom: 10px;
-        }
-    }
-
-    &-block-button {
-        display: flex;
-        gap: 12px;
-        align-items: center;
 
     @include respond-to(xs) {
-        margin-top: 40px;
+      max-width: 315px;
+      min-height: 645px;
+      background: transparent;
+      flex-direction: column;
+      gap: 20px;
+      padding: 0;
     }
+  }
+
+  &-image {
+    max-width: 425px;
+    width: 100%;
+    height: auto;
+    border-radius: $border-radius;
+
+    @include respond-to(sm) {
+      max-width: 300px;
     }
 
-        &-btn-address {
-            width: 425px;
-            height: 60px;
-            background-color: white;
-            flex-grow: 1;
-            display: flex;
-            justify-content: flex-start;
-            color: rgba(43, 43, 43, 1);
-            cursor: text;
-            font-weight: 400;
-            font-size: 16px;
-            color: rgba(43, 43, 43, 1);
-            border: none;
-        
-            @include respond-to(sm) {
-                display: none;
-            }
-        }
+    @include respond-to(xs) {
+      max-width: 315px;
+    }
+  }
 
-        &-btn-address-tablet {
-            display: none;
+  &-block-about {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
 
-            @include respond-to(sm) {
-                display: block;
-                color: rgba(43, 43, 43, 1);
-                background: $color-body;
-                height: 46px;
-                width: 300px;
-                border: none;
-                margin-top: 10px;
-            }
-        }
+  }
 
-            &-btn-subscribe {
-                padding: 14px 20px;
-                background-color: $color-button;
-                position: absolute;
-                height: 61px;
-                width: 211px;
-                top: 251px;
-                left: 219px;   
+  &-title {
+    font-family: $font-primary;
+    color: $color-body;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 1.2;
+    padding-bottom: 10px;
 
-            @include respond-to(sm) {
-                top: 210px;
-                left: 0;
-                width: 300px;
-                height: 46px;
-                margin-top: 10px;
-            }
+    @include respond-to(sm) {
+      font-size: 28px;
+      line-height: 1.4;
+    }
+  }
 
-            @include respond-to(xs) {
-                top: 250px;
-            }
-        }
+  &-subtitle {
+    font-family: $font-primary;
+    color: $color-body;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-top: 20px;
+    margin-bottom: 60px;
+
+    @include respond-to(sm) {
+      font-size: 16px;
+      line-height: 1.4;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  &-block-button {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include respond-to(xs) {
+      margin-top: 40px;
+    }
+  }
+
+  &-btn-address {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    flex: 1 1 auto;
+    width: 425px;
+    height: 60px;
+    background-color: $color-body;
+    padding: 0 16px;
+    color: rgba(43, 43, 43, 1);
+    cursor: text;
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+    
+
+    @include respond-to(sm) {
+      display: none;
+    }
+  }
+
+  &-btn-address-tablet {
+    display: none;
+
+    @include respond-to(sm) {
+      display: block;
+      color: rgba(43, 43, 43, 1);
+      background: $color-body;
+      height: 46px;
+      width: 100%;
+      border: none;
+      margin-top: 10px;
+    }
+  }
+
+  &-btn-subscribe {
+    padding: 14px 20px;
+    background-color: $color-button;
+    position: absolute;
+    height: 61px;
+    width: 211px;
+    top: 251px;
+    left: 340px;
+    border: none;
+
+    @include respond-to(sm) {
+      position: static;
+      width: 100%;
+      height: 46px;
+      margin-top: 10px;
+    }
+
+    @include respond-to(xs) {
+      width: 100%;
+    }
+  }
 }

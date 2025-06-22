@@ -1,62 +1,65 @@
 .header__nav {
-    width: 1280px;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+
+  @include respond-to(sm) {
+    display: none;
+  }
+
+  @include respond-to(xs) {
+    display: none;
+  }
+
+  &-block-logo {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    padding: 40px;
-    
-    @include respond-to(sm) {
-            display: none;
-        }
-    
-        @include respond-to(xs) {
-            display: none;
-        }
+    gap: 10px;
+  }
 
-    &-block-logo {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 10px;
-    }
+  &-icon-storefront {
+    fill: rgba(162, 89, 255, 1);
+  }
 
-    &-icon-storefront {
-        fill: rgba(162, 89, 255, 1);
-    }
+  &-icon-logo {
+    fill: $color-body;
+  }
 
-    &-icon-logo {
-        fill: $color-body;
-    }
+  &-navigation {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
 
-        &-navigation {
-            display: flex; 
-            align-items: center;
-            gap: 40px;
-    }
+  &-menu-list {
+    display: flex;
+    //flex-direction: row;//
+    //justify-content: flex-end;//
+    //align-items: center;//
+    //width: 607px;//
+    //height: 60px;//
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+  }
 
-    &-menu-list {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-        width: 607px;
-        height: 60px;
-        gap: 40px;
-    }
+  &-menu-item {
+    color: $color-body;
+    font-family: $font-primary;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.4;
+    white-space: nowrap;
+  }
 
-    &-menu-item {
-        color: $color-body;
-        font-family: $font-primary;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 1.4;
-    }
-
-    &-signup-btn {
-        width: 152px;
-        height: 60px;
-        
-    }
+  &-signup-btn {
+    width: 152px;
+    height: 60px;
+  }
 }
