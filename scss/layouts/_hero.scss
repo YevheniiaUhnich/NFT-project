@@ -83,6 +83,32 @@
     }
   }
 
+  &-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 510px;
+    color: $color-body;
+    font-family: $font-secondary;
+    position: absolute;
+    top: 460px;
+    left: 0;
+
+    @include respond-to(sm) {
+      max-width: 330px;
+      top: 540px;
+      left: 40px;
+    }
+
+    @include respond-to(xs) {
+      top: 780px;
+      max-width: 315px;
+      gap: 15px;
+    }
+  }
+
+
   &-image-block {
     display: flex;
     flex-direction: column;
@@ -179,31 +205,6 @@
     @include respond-to(xs) {
       top: 680px;
       max-width: 315px;
-    }
-  }
-
-  &-stats {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 30px;
-    max-width: 510px;
-    color: $color-body;
-    font-family: $font-secondary;
-    position: absolute;
-    top: 660px;
-    left: 230px;
-
-    @include respond-to(sm) {
-      max-width: 330px;
-      top: 540px;
-      left: 40px;
-    }
-
-    @include respond-to(xs) {
-      top: 780px;
-      max-width: 315px;
-      gap: 15px;
     }
   }
 
