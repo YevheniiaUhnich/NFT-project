@@ -1,6 +1,9 @@
 .category__content {
   width: 100%;
   margin-top: 180px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
   @include respond-to(sm) {
     margin-top: 80px;

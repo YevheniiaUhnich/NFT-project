@@ -1,7 +1,11 @@
 .discover__content {
   width: 100%;
-  margin-top: 180px;
   position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 80px;
+  padding-bottom: 80px;
 
   @include respond-to(sm) {
     margin-top: 80px;
@@ -17,7 +21,7 @@
     font-size: 38px;
     font-weight: 600;
     line-height: 1.2;
-    margin-left: 80px;
+    
 
     @include respond-to(sm) {
       font-size: 28px;

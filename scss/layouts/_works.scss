@@ -1,6 +1,22 @@
 .works__content {
   width: 100%;
-  margin-top: 80px;
+  min-height: 738px;
+  display: flex;
+  align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+  &-general {
+    width: 1050px;
+    min-height: 738px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 
   &-title {
     font-family: $font-primary;
@@ -8,7 +24,10 @@
     font-size: 38px;
     font-weight: 600;
     line-height: 1.2;
-    margin-left: 190px;
+    width: 1050px;
+    align-self: flex-start;
+    margin-left: 140px;
+    
 
     @include respond-to(sm) {
       font-size: 28px;
@@ -24,6 +43,8 @@
     font-weight: 400;
     line-height: 1.6;
     margin-left: 190px;
+    align-self: flex-start;
+    margin-left: 140px;
 
     @include respond-to(sm) {
       font-size: 16px;
@@ -33,12 +54,11 @@
   }
 
   &-block-works {
-    max-width: 1050px;
+    min-height: 439px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    
     margin-top: 40px;
 
     @include respond-to(sm) {
@@ -53,6 +73,7 @@
   }
 
   &-card {
+    height: 439px;
     border-radius: $border-radius;
     background: $bg-card;
     display: flex;
@@ -74,7 +95,7 @@
   }
 
   &-image {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 
     @include respond-to(xs) {

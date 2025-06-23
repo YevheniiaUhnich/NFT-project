@@ -1,9 +1,16 @@
 .subscribe__content {
   width: 100%;
-  margin-top: 80px;
+  
+
+  &-general {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
   &-block-image {
-    max-width: 1050px;
+    width: 1050px;
     min-height: 430px;
     background: $bg-card;
     border-radius: $border-radius;
@@ -52,7 +59,6 @@
     flex-direction: column;
     position: relative;
     width: 100%;
-
   }
 
   &-title {
@@ -112,7 +118,6 @@
     font-weight: 400;
     font-size: 16px;
     border: none;
-    
 
     @include respond-to(sm) {
       display: none;
