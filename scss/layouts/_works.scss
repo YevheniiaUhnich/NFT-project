@@ -3,9 +3,8 @@
   min-height: 738px;
   display: flex;
   align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
+  justify-content: center;
+  flex-direction: column;
 
   &-general {
     width: 1050px;
@@ -27,7 +26,6 @@
     width: 1050px;
     align-self: flex-start;
     margin-left: 140px;
-    
 
     @include respond-to(sm) {
       font-size: 28px;
@@ -58,7 +56,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    
+
     margin-top: 40px;
 
     @include respond-to(sm) {

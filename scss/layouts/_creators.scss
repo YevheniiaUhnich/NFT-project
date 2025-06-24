@@ -1,10 +1,10 @@
 .creators__content {
   width: 100%;
-  margin-top: 180px;
-  position: relative;
+  padding-top: 180px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 
   @include respond-to(sm) {
     margin-top: 80px;
@@ -14,13 +14,22 @@
     margin-bottom: 20px;
   }
 
+  &-general {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    min-width: 1050px;
+  }
+
   &-title {
     font-family: $font-primary;
     color: $color-body;
     font-size: 38px;
     font-weight: 600;
     line-height: 1.2;
-    margin-left: 200px;
+    padding-right: 800px;
+    
 
     @include respond-to(sm) {
       font-size: 28px;
@@ -35,7 +44,7 @@
     font-size: 22px;
     font-weight: 400;
     line-height: 1.6;
-    margin-left: 200px;
+    padding-right: 440px;
 
     @include respond-to(sm) {
       font-size: 16px;
@@ -185,7 +194,7 @@
     width: 247px;
     height: 60px;
     position: absolute;
-    top: 16px;
+    top: 0;
     left: 990px;
 
     @include respond-to(sm) {

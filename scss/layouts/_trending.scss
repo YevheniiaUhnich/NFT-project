@@ -1,12 +1,21 @@
 .trending__content {
   width: 100%;
   margin-top: 160px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 
   @include respond-to(xs) {
     margin-top: 80px;
+  }
+
+  &-general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1050px;
   }
 
   &-title {
@@ -15,7 +24,8 @@
     font-size: 38px;
     font-weight: 600;
     line-height: 1.2;
-    
+    align-self: flex-start;
+    padding-left: 190px;
 
     @include respond-to(sm) {
       font-size: 28px;
@@ -30,7 +40,8 @@
     font-size: 22px;
     font-weight: 400;
     line-height: 1.6;
-    margin-left: 190px;
+    align-self: flex-start;
+    padding-left: 190px;
 
     @include respond-to(sm) {
       font-size: 16px;
@@ -59,9 +70,9 @@
     }
 
     @include respond-to(xs) {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        width: 315px;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      width: 315px;
     }
   }
 

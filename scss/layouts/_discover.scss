@@ -21,6 +21,7 @@
     font-size: 38px;
     font-weight: 600;
     line-height: 1.2;
+    padding-right: 940px;
     
 
     @include respond-to(sm) {
@@ -36,7 +37,7 @@
     font-size: 22px;
     font-weight: 400;
     line-height: 1.6;
-    margin-left: 80px;
+    padding-right: 1020px;
 
     @include respond-to(sm) {
       font-size: 16px;
@@ -131,7 +132,7 @@
     font-size: 22px;
     font-weight: 600;
     line-height: 1.4;
-    padding: 20px;
+    
   }
 
   &-block-info-avatar {

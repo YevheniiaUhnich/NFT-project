@@ -392,14 +392,22 @@ body {
 .trending__content {
   width: 100%;
   margin-top: 160px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
 @media (max-width: 480px) {
   .trending__content {
     margin-top: 80px;
   }
+}
+.trending__content-general {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1050px;
 }
 .trending__content-title {
   font-family: "Work Sans", sans-serif;
@@ -407,6 +415,8 @@ body {
   font-size: 38px;
   font-weight: 600;
   line-height: 1.2;
+  align-self: flex-start;
+  padding-left: 190px;
 }
 @media (max-width: 768px) {
   .trending__content-title {
@@ -421,7 +431,8 @@ body {
   font-size: 22px;
   font-weight: 400;
   line-height: 1.6;
-  margin-left: 190px;
+  align-self: flex-start;
+  padding-left: 190px;
 }
 @media (max-width: 768px) {
   .trending__content-subtitle {
@@ -587,11 +598,11 @@ body {
 
 .creators__content {
   width: 100%;
-  margin-top: 180px;
-  position: relative;
+  padding-top: 180px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 }
 @media (max-width: 768px) {
   .creators__content {
@@ -603,13 +614,19 @@ body {
     margin-bottom: 20px;
   }
 }
+.creators__content-general {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 1050px;
+}
 .creators__content-title {
   font-family: "Work Sans", sans-serif;
   color: rgb(255, 255, 255);
   font-size: 38px;
   font-weight: 600;
   line-height: 1.2;
-  margin-left: 200px;
+  padding-right: 800px;
 }
 @media (max-width: 768px) {
   .creators__content-title {
@@ -624,7 +641,7 @@ body {
   font-size: 22px;
   font-weight: 400;
   line-height: 1.6;
-  margin-left: 200px;
+  padding-right: 440px;
 }
 @media (max-width: 768px) {
   .creators__content-subtitle {
@@ -773,7 +790,7 @@ body {
   width: 247px;
   height: 60px;
   position: absolute;
-  top: 16px;
+  top: 0;
   left: 990px;
 }
 @media (max-width: 768px) {
@@ -815,7 +832,7 @@ body {
   font-size: 38px;
   font-weight: 600;
   line-height: 1.2;
-  margin-left: 190px;
+  padding-right: 700px;
 }
 @media (max-width: 768px) {
   .category__content-title {
@@ -985,6 +1002,7 @@ body {
   font-size: 38px;
   font-weight: 600;
   line-height: 1.2;
+  padding-right: 940px;
 }
 @media (max-width: 768px) {
   .discover__content-title {
@@ -999,7 +1017,7 @@ body {
   font-size: 22px;
   font-weight: 400;
   line-height: 1.6;
-  margin-left: 80px;
+  padding-right: 1020px;
 }
 @media (max-width: 768px) {
   .discover__content-subtitle {
@@ -1095,7 +1113,6 @@ body {
   font-size: 22px;
   font-weight: 600;
   line-height: 1.4;
-  padding: 20px;
 }
 .discover__content-block-info-avatar {
   display: flex;
@@ -1146,6 +1163,7 @@ body {
 }
 
 .highlight__content {
+  display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -1178,12 +1196,17 @@ body {
   background: linear-gradient(to top, rgba(162, 89, 255, 0.8), rgba(162, 89, 255, 0));
   pointer-events: none;
 }
+.highlight__content-general {
+  min-width: 1050px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 120px;
+}
 .highlight__content-block-magic {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-left: 120px;
-  margin-top: 360px;
   background: rgb(59, 59, 59);
   border-radius: 20px;
   width: max-content;
@@ -1213,7 +1236,6 @@ body {
   font-size: 51px;
   font-weight: 600;
   line-height: 1.1;
-  margin-left: 120px;
   margin-top: 40px;
   max-width: 600px;
 }
@@ -1237,8 +1259,8 @@ body {
   background: rgb(255, 255, 255);
   color: rgb(43, 43, 43);
   position: absolute;
-  top: 540px;
-  left: 120px;
+  top: 500px;
+  left: 200px;
 }
 @media (max-width: 768px) {
   .highlight__content-btn-NFT {
@@ -1265,7 +1287,7 @@ body {
   backdrop-filter: blur(10px);
   border-radius: 20px;
   position: absolute;
-  top: 450px;
+  top: 420px;
   right: 180px;
 }
 @media (max-width: 768px) {
@@ -1837,7 +1859,7 @@ body {
   color: rgb(133, 133, 132);
   margin-left: auto;
   margin-right: auto;
-  max-width: 1049px;
+  width: 1049px;
   text-align: left;
   padding-bottom: 40px;
 }
