@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  position: relative;
 
   @include respond-to(sm) {
     margin-top: 80px;
@@ -189,13 +188,17 @@
     line-height: 1.4;
   }
 
+  &-wrapper-button {
+    position: relative;
+  }
+
   &-btn-rankings {
     background: transparent;
     width: 247px;
     height: 60px;
     position: absolute;
-    top: 0;
-    left: 990px;
+    top: -880px;
+    left: 800px;
 
     @include respond-to(sm) {
       left: 480px;

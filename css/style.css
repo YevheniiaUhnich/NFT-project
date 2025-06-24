@@ -602,7 +602,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  position: relative;
 }
 @media (max-width: 768px) {
   .creators__content {
@@ -785,13 +784,16 @@ body {
   font-weight: 400;
   line-height: 1.4;
 }
+.creators__content-wrapper-button {
+  position: relative;
+}
 .creators__content-btn-rankings {
   background: transparent;
   width: 247px;
   height: 60px;
   position: absolute;
-  top: 0;
-  left: 990px;
+  top: -880px;
+  left: 800px;
 }
 @media (max-width: 768px) {
   .creators__content-btn-rankings {
@@ -979,7 +981,6 @@ body {
 
 .discover__content {
   width: 100%;
-  position: relative;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -1146,13 +1147,16 @@ body {
   font-size: 16px;
   line-height: 1.4;
 }
+.discover__content-wrapper-button {
+  position: relative;
+}
 .discover__content-btn-see-all {
   width: 187px;
   height: 60px;
   background: transparent;
   position: absolute;
-  top: 10px;
-  right: 70px;
+  top: -570px;
+  right: -640px;
 }
 @media (max-width: 480px) {
   .discover__content-btn-see-all {
@@ -1164,10 +1168,9 @@ body {
 
 .highlight__content {
   display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
   background-image: linear-gradient(90deg, rgb(162, 89, 255) 0%, rgba(162, 89, 255, 0) 54%, rgb(162, 89, 255) 100%), url(../image/1x/grib.png);
   min-height: 640px;
   background-position: center;
@@ -1192,16 +1195,16 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 10%;
+  height: 30%;
   background: linear-gradient(to top, rgba(162, 89, 255, 0.8), rgba(162, 89, 255, 0));
   pointer-events: none;
 }
 .highlight__content-general {
   min-width: 1050px;
-  display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 120px;
+  margin-bottom: 40px;
+  margin-left: 180px;
 }
 .highlight__content-block-magic {
   display: flex;
@@ -1258,9 +1261,7 @@ body {
   height: 60px;
   background: rgb(255, 255, 255);
   color: rgb(43, 43, 43);
-  position: absolute;
-  top: 500px;
-  left: 200px;
+  margin-top: 40px;
 }
 @media (max-width: 768px) {
   .highlight__content-btn-NFT {
@@ -1287,8 +1288,8 @@ body {
   backdrop-filter: blur(10px);
   border-radius: 20px;
   position: absolute;
-  top: 420px;
-  right: 180px;
+  top: 460px;
+  right: 170px;
 }
 @media (max-width: 768px) {
   .highlight__content-timer {
