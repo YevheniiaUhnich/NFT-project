@@ -39,6 +39,7 @@
       rgba(162, 89, 255, 0)
     );
     pointer-events: none;
+    
   }
 
   &-general {
@@ -47,6 +48,7 @@
     justify-content: center;
     margin-bottom: 40px;
     margin-left: 180px;
+    z-index: 1;
   }
 
   &-block-magic {

@@ -1205,6 +1205,7 @@ body {
   justify-content: center;
   margin-bottom: 40px;
   margin-left: 180px;
+  z-index: 1;
 }
 .highlight__content-block-magic {
   display: flex;
